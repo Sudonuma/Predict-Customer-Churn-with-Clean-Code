@@ -10,7 +10,7 @@ Results of the EDA are saved under 'images/eda'
 The models inculded in the package under '/models' directory are .pkl files saved after training with the Random Forest Classifier and Logistic regression.
 The completed project includes a Python package for a machine learning project that follows coding (PEP8) and engineering best practices for implementing software (modular, documented, and tested). The package can be run interactively or from the command-line interface (CLI).
 
-## Prerequisites
+## Dependencies
 
 Before starting please make sure to install these libraries:
 
