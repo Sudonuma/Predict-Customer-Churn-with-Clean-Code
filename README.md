@@ -32,4 +32,5 @@ To use the fucions import the churn_library module in your script.
 
 The project also includes unit tests for each function.
 To run the tests run the following command:
-`ipython churn_script_logging_and_test.py`
+
+` ipython churn_script_logging_and_test.py`
