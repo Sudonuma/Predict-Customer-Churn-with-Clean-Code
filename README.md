@@ -24,8 +24,36 @@ scikit-learn
 pylint
 
 ```
+## Files in the Repo
+### Folder structure
 
-## Running Files
+```
+data
+    bank_data.csv
+images
+    eda
+        Churn_distribution.png
+        Customer_age_distribution.png
+        heatmap.png
+        marital_status_distribution.png
+        total_transaction_distribution.png
+    results
+        feature_importances.png
+        logistic_results.png
+        rf_results.png
+        roc_curve_results.png
+logs
+    churn_library.log
+models
+    logistic_model.pkl
+    rfc_model.pkl
+churn_library.py
+churn_notebook.ipynb
+churn_script_logging_and_tests.py
+README.md
+```
+
+### Running Files
 To use the fucions import the churn_library module in your script.
 
 `import churn_library as cls`

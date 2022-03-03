@@ -8,6 +8,7 @@ Date: 02/03/2022
 
 '''
 
+# from black import ipynb_diff
 from sklearn.metrics import plot_roc_curve, classification_report
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
@@ -266,9 +267,11 @@ def train_models(X_train, X_test, y_train, y_test):
                                 y_test_preds_rf)
 
     lrc_plot = plot_roc_curve(lrc, X_test, y_test)
+    
 
     plt.figure(figsize=(15, 8))
     ax = plt.gca()
+    rfc_disp = plot_roc_curve(cv_rfc, X_test, y_test, ax=ax, alpha=0.8)
     lrc_plot.plot(ax=ax, alpha=0.8)
     plt.savefig('./images/results/roc_curve_result.png')
 
